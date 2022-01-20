@@ -12,9 +12,9 @@ from sklearn.model_selection import train_test_split
 
 np.set_printoptions(threshold=sys.maxsize)
 
-dreams = pd.read_excel("C:/Users/luca_/Documents/Python/DSProjects/dreams_reports.xlsx")
+dreams = pd.read_excel("C:")
 dreams = pd.DataFrame(dreams[:420])
-political_dreams = pd.read_excel("C:/Users/luca_/Documents/Python/DSProjects/political_dreams01.xlsx")
+political_dreams = pd.read_excel("C:")
 
 dreams['labels'].replace(to_replace= 'neg', value=0, inplace=True)
 dreams['labels'].replace(to_replace= 'pos', value=1, inplace=True)
